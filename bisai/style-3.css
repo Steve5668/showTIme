@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+body {
+    background-color: #f0f7ff;
+    padding: 30px;
+}
+/* 整体容器 上下分层结构 完全复刻图一 */
+.page-box {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 35px rgba(0,0,0,0.1);
+}
+/* 顶部蓝色区块（对应图一上半蓝色） */
+.top-blue {
+    width: 100%;
+    height: 420px;
+    background-color: #00A650;
+    color: #fff;
+    padding: 35px 45px;
+    position: relative;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.top-left-text {
+    margin-top: 60px;
+}
+.top-left-text h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+}
+.sub-title {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 22px;
+}
+.text-desc {
+    max-width: 480px;
+    line-height: 1.7;
+    opacity: 0.8;
+    font-size: 15px;
+}
+/* 火箭装饰位置（右上角） */
+.rocket-decor {
+    width: 260px;
+    height: 220px;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+}
+/* 底部白色区域（图一下半白色） */
+.bottom-white {
+    width: 100%;
+    height: 460px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    position: relative;
+}
+/* 左下角快捷用户区域 */
+.quick-user {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+}
+.quick-user p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.user-card-wrap {
+    display: flex;
+    gap: 28px;
+}
+.user-card {
+    width: 145px;
+    text-align: center;
+}
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #dddddd;
+    margin: 0 auto 10px;
+}
+.username {
+    display: block;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 4px;
+}
+.user-card small {
+    font-size: 12px;
+    color: #888;
+}
+/* 右侧登录卡片 */
+.login-card {
+    width: 480px;
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    right: 50px;
+    /*top: -100px;*/
+    margin-bottom: 500px;
+}
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.card-title span {
+    font-size: 18px;
+    color: #666;
+}
+.card-title strong {
+    color: #0099ff;
+    font-size: 18px;
+}
+.card-title h2 {
+    font-size: 52px;
+    color: #111;
+    margin-top: 6px;
+}
+.register-link {
+    font-size: 14px;
+    color: #777;
+}
+.register-link a {
+    color: #0099ff;
+    text-decoration: none;
+}
+/* 第三方登录栏 */
+.third-login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.google-login {
+    flex: 1;
+    height: 48px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.icon-box {
+    display: flex;
+    gap: 10px;
+}
+.fb-icon, .video-icon {
+    width: 48px;
+    height: 48px;
+    background: #f1f3f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/* 表单输入框 */
+.input-item {
+    margin-bottom: 24px;
+}
+.input-item label {
+    display: block;
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 8px;
+}
+.input-item input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+}
+.input-item input:focus {
+    outline: none;
+    border-color: #0099ff;
+    box-shadow: 0 0 0 3px rgba(0,153,255,0.15);
+}
+.forget-pwd {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #0099ff;
+    text-decoration: none;
+}
+/* 登录按钮 */
+.login-btn {
+    width: 100%;
+    height: 52px;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.login-btn:hover {
+    background-color: #0088e6;
+}
+
+
+
+
+

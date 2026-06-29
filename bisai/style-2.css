@@ -1,0 +1,143 @@
+/* 全局重置与基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    line-height: 1.6;
+}
+
+/* 顶部绿色横幅 */
+.banner {
+    width: 100%;
+    background-color: #00A650;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.banner-en {
+    font-size: 32px;
+    opacity: 0.9;
+}
+
+/* 品牌简介区域 */
+.intro-section {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #666;
+    max-width: 1000px;
+    margin: 0 auto 15px;
+}
+
+/* 核心团队卡片 */
+.team-section {
+    padding: 30px 20px;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.team-avatars {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h3 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.team-info p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* 底部两栏信息卡片 */
+.bottom-cards {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* 响应式适配（手机端） */
+@media (max-width: 768px) {
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-avatars {
+        justify-content: center;
+    }
+
+    .bottom-cards {
+        flex-direction: column;
+    }
+}
